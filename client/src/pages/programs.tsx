@@ -26,9 +26,11 @@ function Programs() {
       <ul>
         {program.map((item) => (
           <li key={item.id}>
-            {item.title} - {item.synopsis} -{" "}
-            <img src={item.poster} alt="affiche" /> - {item.country} -
-            {item.year}
+            <h1>{item.title}</h1>
+            <p>{item.synopsis}</p>
+            <img src={item.poster} alt="{item.title}" />
+            <p>{item.country}</p>
+            <p>{item.year}</p>
           </li>
         ))}
       </ul>
